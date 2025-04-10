@@ -6,11 +6,14 @@ import Weather from '../weather/Weather'
 
 function MiniProjects() {
   return (
+    <>
+<h1 className='mini-projects-text'>MINI PROJECTS</h1>
     <div className='mini'>
       <Num />
-      <Weather />
       <Currency />
+      <Weather />
     </div>
+    </>
   )
 }
 

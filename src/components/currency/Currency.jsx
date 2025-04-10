@@ -16,6 +16,7 @@ function Currency() {
     { name: "UZS", id: 2 },
     { name: "EUR", id: 3 },
     { name: "RUB", id: 4 },
+    { name: "AED", id: 5 },
   ];
 
   const apikey = "9e9a358106675fa80d70f6d8";
@@ -50,7 +51,7 @@ function Currency() {
             <button
               className={item.name === activate ? "currency-activate" : ""}
               onClick={() =>
-                item.name !== activate2 ? setActivate(item.name) : null
+                 setActivate(item.name) 
               }
               key={item.id}
             >
@@ -76,7 +77,7 @@ function Currency() {
             <button
               className={item.name === activate2 ? "currency-activate" : ""}
               onClick={() =>
-                item.name !== activate ? setActivate2(item.name) : null
+                setActivate2(item.name) 
               }
               key={item.id}
             >
@@ -87,7 +88,7 @@ function Currency() {
         <input
           value={value2}
           onChange={(e) => setValue2(parseFloat(e.target.value) || 0)}
-          type="number"
+          type="text"
           className="currency-input"
         />
       </div>
